@@ -93,3 +93,37 @@ vrpathreg adddriver "path_to_leap_folder"
 ```JSON
 "activateMultipleDrivers": true,
 ```
+
+### Additional Configuration to Make it work:
+from [VR Software Wiki](https://sites.google.com/view/brown-vr-sw-review-2018/vr-hardware/hardware-emulators/null-driver-tutorial)
+
+### Configuring the null Driver
+1. Navigate to your Steam install folder.
+
+On Windows, it is usually "C:\Program Files\Steam"
+On Mac, it is usually "/Users/<your user name>/Library/Application Support/Steam "
+On Linux, it varies by distro, but is often at "~/.steam/steam " or "~/.local/share/Steam "
+2. Navigate to the 'config' folder.
+
+3. Open 'steamvr.vrsettings' in a text editor.
+
+4. Copy the following within the outer layer of brackets and after whatever is there. Be sure to include the comma after the last preexisting item.
+
+You don't strictly need the "window" parameters. If you leave them off, you'll need to use the display mirror to see what the headset sees.
+,
+```JSON
+"driver_null" : {
+      "enable" : true,
+      "id" : "Null Driver",
+      "windowHeight" : 1080,
+      "windowWidth" : 1920,
+      "windowX" : 100,
+      "windowY" : 100
+   },
+```
+
+### Enabling the null Driver
+1. Simply set "enable" to true in the configuration seen above.
+
+### Disabling the null Driver
+Simply set "enable" to false in the configuration step seen above.
