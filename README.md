@@ -100,9 +100,9 @@ from [VR Software Wiki](https://sites.google.com/view/brown-vr-sw-review-2018/vr
 ### Configuring the null Driver
 1. Navigate to your Steam install folder.
 
-On Windows, it is usually "C:\Program Files\Steam"
-On Mac, it is usually "/Users/<your user name>/Library/Application Support/Steam "
-On Linux, it varies by distro, but is often at "~/.steam/steam " or "~/.local/share/Steam "
+On Windows, it is usually 'C:\Program Files\Steam'
+On Mac, it is usually '/Users/<your user name>/Library/Application Support/Steam'
+On Linux, it varies by distro, but is often at '~/.steam/steam' or '~/.local/share/Steam'
 2. Navigate to the 'config' folder.
 
 3. Open 'steamvr.vrsettings' in a text editor.
